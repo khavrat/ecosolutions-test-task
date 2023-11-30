@@ -1,0 +1,75 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Oswald:wght@400;700&display=swap");
+
+:root {
+  --bg-color: #f3f5fa;
+  --primary-color: #173d33;
+  --accent-color: #97d28b;
+  --burger-bg-color: #DCEFD8;
+  --backdrop-color: rgba(23, 61, 51, 0.25);
+  --menu-bg-color: rgba(23, 61, 51, 0.75);
+  --wight-color: #ffffff;
+  --form-text-color: #bdbdbd;
+  --form-invalid-color: #d28b8b;
+
+  --transition-duration: 2500ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --text-fontSize: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Fira Sans", "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
