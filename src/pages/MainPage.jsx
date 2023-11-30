@@ -1,8 +1,7 @@
 import { Header } from "../components/header/Header";
 
-export const MainPage = () => {
-  return (
-      <Header />
-  );
+export const MainPage = (toggleMenu) => {
+
+  return <Header />;
 };
 

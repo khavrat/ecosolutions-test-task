@@ -1,6 +1,7 @@
-import {MainPage} from "../src/pages/MainPage"
+import { MainPage } from "../src/pages/MainPage"
 
 function App() {
+
   return (
     <>
       <MainPage />
