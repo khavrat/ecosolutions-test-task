@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ecosolutions-test-task/static/css/main.c23de75d.css",
+    "main.js": "/ecosolutions-test-task/static/js/main.2ba1bd67.js",
+    "static/media/logoHover.svg": "/ecosolutions-test-task/static/media/logoHover.b22cd439d50ce48a846de45535ad908a.svg",
+    "static/media/logo.svg": "/ecosolutions-test-task/static/media/logo.7d102154dce2d14bc9c97e7b462dabdc.svg",
+    "index.html": "/ecosolutions-test-task/index.html",
+    "static/media/arrowSm.svg": "/ecosolutions-test-task/static/media/arrowSm.b46be50c0da26b6c93da1400e8de009a.svg",
+    "static/media/menu.svg": "/ecosolutions-test-task/static/media/menu.388c7838328211dc8d8856c58eee3ae0.svg",
+    "main.c23de75d.css.map": "/ecosolutions-test-task/static/css/main.c23de75d.css.map",
+    "main.2ba1bd67.js.map": "/ecosolutions-test-task/static/js/main.2ba1bd67.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c23de75d.css",
+    "static/js/main.2ba1bd67.js"
+  ]
+}
