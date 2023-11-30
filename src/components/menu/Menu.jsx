@@ -6,10 +6,11 @@ import {
   CloseButton,
   MenuLinkWrapper,
   MenuLink,
+  CustomClass,
 } from "./Menu.styled";
 
 export const Menu = ({ isOpen, onClose }) => {
-    
+
   useEffect(() => {
     const body = document.querySelector("body");
     if (isOpen === true) {
@@ -140,7 +141,9 @@ export const Menu = ({ isOpen, onClose }) => {
                 </svg>
               </MenuLink>
             </MenuLinkWrapper>
-            <NetLink />
+            <CustomClass>
+              <NetLink />
+            </CustomClass>
           </Content>
         </Backdrop>
       )}

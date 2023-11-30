@@ -14,11 +14,24 @@ export const Content = styled.div`
   position: fixed;
   top: 36px;
   right: 20px;
-  width: 320px;
+        bottom: 36px;
+    min-width: 320px;
+      min-height: 350px;
+
   background-color: var(--menu-bg-color);
   border-radius: 25px;
   padding: 16px 24px 24px;
   z-index: 6;
+
+
+    @media screen and (max-width: 767px) {
+  left: 20px;
+
+
+
+  @media screen and (min-width: 768px) {
+    width: 320px;
+  }
 
   @media screen and (min-width: 1280px) {
     top: 30px;
@@ -53,7 +66,6 @@ export const CloseButton = styled.button`
 
 export const MenuLinkWrapper = styled.div`
   margin-top: 20px;
-  margin-bottom: 395px;
 `;
 
 export const MenuLink = styled.a`
@@ -74,4 +86,8 @@ export const MenuLink = styled.a`
   }
 `;
 
-
+export const CustomClass = styled.div`
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+`;
