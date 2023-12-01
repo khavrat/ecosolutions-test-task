@@ -57,7 +57,7 @@ export const Header = () => {
             </a>
             <Wrapper>
               <Burger onClick={toggleMenu}>
-                <img src={menu} alt="button menu" />
+                <img src={menu} alt="button menu" width="16" height="16"/>
               </Burger>
               {windowWidth >= 768 ? (
                 <ButtonFull nameButton="Contact Us"></ButtonFull>

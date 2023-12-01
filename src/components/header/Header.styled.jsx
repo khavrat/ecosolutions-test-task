@@ -26,7 +26,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Burger = styled.button`
-  border-color: transparent;
+  border: none;
   border-radius: 50%;
   background-color: var(--burger-bg-color);
   display: inline-flex;
