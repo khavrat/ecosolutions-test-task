@@ -27,6 +27,8 @@
   --headTitleSm-fontSize: 36px;
   --headTitleMd-fontSize: 48px;
   --headTitleLg-fontSize: 64px;
+  --count-fontSize: 100px;
+  --countLg-fontSize: 164px;
 }
 
 * {

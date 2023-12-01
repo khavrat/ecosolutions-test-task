@@ -46,6 +46,7 @@ export const Title = styled.h2`
     width: 365px;
   }
 `;
+
 export const WrapperDescr = styled.div`
   @media screen and (max-width: 767px) {
     margin: 24px 0 36px 0;
