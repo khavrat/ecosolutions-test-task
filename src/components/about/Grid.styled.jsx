@@ -13,3 +13,12 @@ export const GridContainer = styled.div`
     grid-gap: 48px;
   }
 `;
+
+export const ImageCard = styled.div`
+  min-height: 197px;
+  grid-column: span 2;
+  background-color: var(--card-color);
+`;
+
+
+

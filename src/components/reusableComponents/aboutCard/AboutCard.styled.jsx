@@ -2,13 +2,12 @@ import styled from "@emotion/styled";
 
 export const Card = styled.div`
   background-color: var(--card-color);
-  outline: solid 1px red;
   padding: 12px;
   min-height: 197px;
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding: 48px 24px;
-}
+  }
 `;
 
 export const Wrapper = styled.div`
