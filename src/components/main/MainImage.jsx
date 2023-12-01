@@ -5,7 +5,7 @@ import heroMdX2 from "../../images/hero/heroMdX2.jpg";
 import heroLg from "../../images/hero/heroLg.jpg";
 import heroLgX2 from "../../images/hero/heroLgX2.jpg";
 
-export const HeroImage = ({ children }) => {
+export const MainImage = ({ children }) => {
   return (
     <picture>
       <source
@@ -20,7 +20,7 @@ export const HeroImage = ({ children }) => {
         srcSet={`${heroSm} 1x, ${heroSmX2} 2x`}
         media="(max-width: 767px)"
       />
-      <img src={heroSm} alt="vegitable" />
+      <img src={heroSm} alt="vegitable" width="100%"/>
     </picture>
   );
 };

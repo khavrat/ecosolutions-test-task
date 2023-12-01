@@ -5,10 +5,11 @@
   --bg-color: #f3f5fa;
   --primary-color: #173d33;
   --accent-color: #97d28b;
-  --burger-bg-color: #DCEFD8;
+  --burger-bg-color: #dcefd8;
   --backdrop-color: rgba(23, 61, 51, 0.25);
   --menu-bg-color: rgba(23, 61, 51, 0.75);
   --wight-color: #ffffff;
+  --card-color: #eaedf1;
   --form-text-color: #bdbdbd;
   --form-invalid-color: #d28b8b;
   --transparent-color: transparent;
@@ -16,10 +17,15 @@
   --transition-duration: 2500ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  --cardText-fontSize: 14px;
   --text-fontSize: 16px;
+  --cardTitleMd-fontSize: 18px;
   --closeBtn-fontSize: 20px;
   --link-fontSize: 24px;
+  --cardTitleLg-fontSize: 32px;
   --headTitleSm-fontSize: 36px;
+  --headTitleMd-fontSize: 48px;
+  --headTitleLg-fontSize: 64px;
 }
 
 * {
@@ -36,7 +42,7 @@ body {
 }
 
 body.modal-open {
-  overFlow: hidden;
+  overflow: hidden;
 }
 
 code {
@@ -84,4 +90,3 @@ li {
 button {
   cursor: pointer;
 }
-

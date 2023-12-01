@@ -21,6 +21,10 @@ export const Content = styled.div`
 
   @media (min-width: 1280px) {
     width: 1280px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
     padding: 0 100px;
   }
 `;

@@ -2,7 +2,12 @@
 import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
-text-align: center;`;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+`;
 
 export const Dot = styled.div`
   border-radius: 50%;
