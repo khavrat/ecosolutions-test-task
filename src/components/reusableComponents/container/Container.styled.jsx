@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const Content = styled.div`
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 
   @media (min-width: 360px) and (max-width: 379px) {
     width: 100%;

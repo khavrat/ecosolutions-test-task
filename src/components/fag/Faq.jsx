@@ -1,9 +1,10 @@
-import { Container } from "../container/Container";
+import { Container } from "../reusableComponents/container/Container";
 import { FaqList } from "./FaqList";
 import {
   Section,
   OrderWrapper,
-  TitleWrapper, Title,
+  TitleWrapper,
+  Title,
   Wrapper,
   FaqListWrapper,
   Text,
@@ -24,7 +25,7 @@ export const Faq = () => {
         </OrderWrapper>
         <Wrapper>
           <Text>Didn't find the answer to your question? </Text>
-          <ButtonFull nameButton="Contact Us" />
+          <ButtonFull nameButton="Contact Us" type="button"/>
         </Wrapper>
       </Container>
     </Section>

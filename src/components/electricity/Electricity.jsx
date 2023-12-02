@@ -1,4 +1,4 @@
-import {Container} from "../container/Container"
+import { Container } from "../reusableComponents/container/Container";
 import { Section, Title, Line, Text, Span } from "./Electricity.styled";
 
 export const Electricity = () => {

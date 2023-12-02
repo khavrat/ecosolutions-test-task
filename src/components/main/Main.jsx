@@ -1,5 +1,5 @@
 import { useState, useLayoutEffect } from "react";
-import { Container } from "../container/Container";
+import { Container } from "../reusableComponents/container/Container";
 import { ButtonEmpty } from "../reusableComponents/buttonEmpty/ButtonEmpty";
 import { AddressEl } from "../reusableComponents/contacts/AddressEl";
 import { MailEl } from "../reusableComponents/contacts/MailEl";
@@ -14,7 +14,7 @@ import {
   Text,
   AdressWrapper,
   AdressElWrapper,
-  CopyWrapper
+  CopyWrapper,
 } from "./Main.styled";
 
 export const Main = () => {
@@ -43,7 +43,7 @@ export const Main = () => {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </Text>
-            <ButtonEmpty nameButton="Learn more"></ButtonEmpty>
+            <ButtonEmpty nameButton="Learn more" type="button"></ButtonEmpty>
           </Box>
         </Wrapper>
         <AdressWrapper>

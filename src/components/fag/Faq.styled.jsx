@@ -58,11 +58,15 @@ export const Wrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    bottom: 68px;
+    bottom: 16px;
     right: 70px;
   }
   @media screen and (min-width: 1280px) {
     right: 100px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    right: 170px;
   }
 `;
 

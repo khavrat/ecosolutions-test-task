@@ -17,6 +17,7 @@
   --transition-duration: 2500ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  --errorText-fontSize: 12px;
   --cardText-fontSize: 14px;
   --text-fontSize: 16px;
   --cardTitleMd-fontSize: 18px;

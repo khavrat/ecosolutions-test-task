@@ -1,10 +1,12 @@
-import { Container } from "../container/Container";
+import { Container } from "../reusableComponents/container/Container";
 import { Description } from "../reusableComponents/sectionDescr/Descr";
 import { Grid } from "../about/Grid";
 import {
   Section,
   WrapperContent,
-  WrapperTitle, Title, WrapperDescr,
+  WrapperTitle,
+  Title,
+  WrapperDescr,
 } from "./About.styled";
 
 export const About = () => {
