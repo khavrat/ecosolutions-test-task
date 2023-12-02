@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecosolutions-test-task/static/css/main.e2fa248e.css",
-    "main.js": "/ecosolutions-test-task/static/js/main.690428a8.js",
+    "main.css": "/ecosolutions-test-task/static/css/main.542d596d.css",
+    "main.js": "/ecosolutions-test-task/static/js/main.e90e86a0.js",
     "static/media/heroLgX2.jpg": "/ecosolutions-test-task/static/media/heroLgX2.580b9b8eee923be17482.jpg",
     "static/media/heroMdX2.jpg": "/ecosolutions-test-task/static/media/heroMdX2.15461b9131b90264f7ad.jpg",
     "static/media/heroLg.jpg": "/ecosolutions-test-task/static/media/heroLg.22fa7a1c8aea5afaa8a6.jpg",
@@ -22,12 +22,14 @@
     "index.html": "/ecosolutions-test-task/index.html",
     "static/media/circle.svg": "/ecosolutions-test-task/static/media/circle.4f2caace89dc989501226555bb6aa429.svg",
     "static/media/arrowSm.svg": "/ecosolutions-test-task/static/media/arrowSm.b46be50c0da26b6c93da1400e8de009a.svg",
+    "static/media/add.svg": "/ecosolutions-test-task/static/media/add.f3a1eeae3cf5a47cd4ecf67862eed8b7.svg",
+    "static/media/minus.svg": "/ecosolutions-test-task/static/media/minus.d12460605d061b33f455d3a8e293ff70.svg",
     "static/media/menu.svg": "/ecosolutions-test-task/static/media/menu.388c7838328211dc8d8856c58eee3ae0.svg",
-    "main.e2fa248e.css.map": "/ecosolutions-test-task/static/css/main.e2fa248e.css.map",
-    "main.690428a8.js.map": "/ecosolutions-test-task/static/js/main.690428a8.js.map"
+    "main.542d596d.css.map": "/ecosolutions-test-task/static/css/main.542d596d.css.map",
+    "main.e90e86a0.js.map": "/ecosolutions-test-task/static/js/main.e90e86a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2fa248e.css",
-    "static/js/main.690428a8.js"
+    "static/css/main.542d596d.css",
+    "static/js/main.e90e86a0.js"
   ]
 }
