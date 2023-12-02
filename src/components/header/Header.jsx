@@ -1,16 +1,14 @@
 import { useState, useLayoutEffect, useEffect } from "react";
-import logo from "../../images/icons/logo.svg";
-import logoHover from "../../images/icons/logoHover.svg";
 import menu from "../../images/icons/menu.svg";
 import { Container } from "../container/Container";
 import { HeaderBlock, HeaderWrapper, Burger, Wrapper } from "./Header.styled";
 import { ButtonFull } from "../reusableComponents/buttonFull/ButtonFull";
 import { changedColorHeader } from "../../helpers/changedColorHeader";
 import { Menu } from "../menu/Menu";
+import { Logo } from "../reusableComponents/logo/Logo";
 
 export const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [isHovered, setIsHovered] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -19,7 +17,6 @@ export const Header = () => {
       window.removeEventListener("scroll", changedColorHeader);
     };
   }, []);
-
 
   useLayoutEffect(() => {
     const handleResize = () => {
@@ -31,10 +28,6 @@ export const Header = () => {
     };
   }, []);
 
-  const handleHover = () => {
-    setIsHovered(!isHovered);
-  };
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -44,20 +37,10 @@ export const Header = () => {
       <HeaderBlock>
         <Container>
           <HeaderWrapper>
-            <a
-              href="# "
-              onMouseEnter={handleHover}
-              onMouseLeave={handleHover}
-            >
-              {isHovered ? (
-                <img src={logoHover} alt="logo" />
-              ) : (
-                <img src={logo} alt="logo" />
-              )}
-            </a>
+            <Logo />
             <Wrapper>
               <Burger onClick={toggleMenu}>
-                <img src={menu} alt="button menu" width="16" height="16"/>
+                <img src={menu} alt="button menu" width="16" height="16" />
               </Burger>
               {windowWidth >= 768 ? (
                 <ButtonFull nameButton="Contact Us"></ButtonFull>

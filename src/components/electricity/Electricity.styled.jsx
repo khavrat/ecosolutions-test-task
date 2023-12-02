@@ -21,6 +21,7 @@ export const Title = styled.h2`
   line-height: 1;
   text-transform: uppercase;
   margin: 0 auto;
+  width: 290px;
 
   @media screen and (min-width: 768px) {
     font-size: var(--headTitleSm-fontSize);
