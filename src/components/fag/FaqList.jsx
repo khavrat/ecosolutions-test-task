@@ -4,7 +4,7 @@ import { Button, Pocket, Text } from "./FaqList.styled";
 import add from "../../images/icons/add.svg";
 import minus from "../../images/icons/minus.svg";
 
-export const FagList = () => {
+export const FaqList = () => {
   const [fagIsOpen, setFagIsOpen] = useState(questtionList[0].id);
 
   const handleClickFagEl = (id) => {
