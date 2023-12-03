@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecosolutions-test-task/static/css/main.9fa16f76.css",
-    "main.js": "/ecosolutions-test-task/static/js/main.d84601fb.js",
+    "main.css": "/ecosolutions-test-task/static/css/main.0149c04d.css",
+    "main.js": "/ecosolutions-test-task/static/js/main.b72209bc.js",
     "static/media/heroLgX2.jpg": "/ecosolutions-test-task/static/media/heroLgX2.580b9b8eee923be17482.jpg",
     "static/media/heroMdX2.jpg": "/ecosolutions-test-task/static/media/heroMdX2.15461b9131b90264f7ad.jpg",
     "static/media/cardImg2x2.jpg": "/ecosolutions-test-task/static/media/cardImg2x2.7644d305dc243ca2280c.jpg",
@@ -39,11 +39,11 @@
     "static/media/add.svg": "/ecosolutions-test-task/static/media/add.f3a1eeae3cf5a47cd4ecf67862eed8b7.svg",
     "static/media/minus.svg": "/ecosolutions-test-task/static/media/minus.d12460605d061b33f455d3a8e293ff70.svg",
     "static/media/menu.svg": "/ecosolutions-test-task/static/media/menu.388c7838328211dc8d8856c58eee3ae0.svg",
-    "main.9fa16f76.css.map": "/ecosolutions-test-task/static/css/main.9fa16f76.css.map",
-    "main.d84601fb.js.map": "/ecosolutions-test-task/static/js/main.d84601fb.js.map"
+    "main.0149c04d.css.map": "/ecosolutions-test-task/static/css/main.0149c04d.css.map",
+    "main.b72209bc.js.map": "/ecosolutions-test-task/static/js/main.b72209bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fa16f76.css",
-    "static/js/main.d84601fb.js"
+    "static/css/main.0149c04d.css",
+    "static/js/main.b72209bc.js"
   ]
 }
