@@ -1,11 +1,10 @@
 import { useState, useLayoutEffect } from "react";
-import { GridContainer } from "./Grid.styled";
+import { GridContainer, ImageCard } from "./Grid.styled";
 import { AboutCard } from "../reusableComponents/aboutCard/AboutCard";
 import charge from "../../images/icons/card/charge.svg";
 import circle from "../../images/icons/card/circle.svg";
 import global from "../../images/icons/card/global.svg";
 import ranking from "../../images/icons/card/ranking.svg";
-import { ImageCard } from "./Grid.styled"
 import qualityMd from "../../images/about/qualityMd.jpg"
 import qualityMdX2 from "../../images/about/qualityMdX2.jpg";
 import qualityLg from "../../images/about/qualityLg.jpg";

@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { questtionList } from "../../data/questionList";
+import { faqList } from "../../data/faqList";
 import { Button, Pocket, Text } from "./FaqList.styled";
 import add from "../../images/icons/add.svg";
 import minus from "../../images/icons/minus.svg";
 
 export const FaqList = () => {
-  const [fagIsOpen, setFagIsOpen] = useState(questtionList[0].id);
+  const [fagIsOpen, setFagIsOpen] = useState(faqList[0].id);
 
   const handleClickFagEl = (id) => {
     setFagIsOpen(id === fagIsOpen ? null : id);
@@ -13,7 +13,7 @@ export const FaqList = () => {
 
   return (
     <ul>
-      {questtionList.map((fagEl) => {
+      {faqList.map((fagEl) => {
         return (
           <li key={fagEl.id}>
             <Button onClick={() => handleClickFagEl(fagEl.id)}>

@@ -27,12 +27,17 @@ export const Content = styled.div`
   }
 
   @media screen and (min-width: 768px) {
+    right: 30px;
     width: 320px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 30px;
+    top: 24px;
     width: 365px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    right: 100px;
   }
 `;
 

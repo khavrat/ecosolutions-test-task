@@ -1,4 +1,4 @@
-export const questtionList = [
+export const faqList = [
   {
     id: "1",
     q: "How do wind turbines and solar panels work together in a renewable energy system?",
