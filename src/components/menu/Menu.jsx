@@ -51,23 +51,23 @@ export const Menu = ({ isOpen, onClose }) => {
               close
             </CloseButton>
             <MenuLinkWrapper>
-              <MenuLink href="#">
+              <MenuLink href="#main" onClick={onClose}>
                 Main
                 <ArrowSvg />
               </MenuLink>
-              <MenuLink href="#">
+              <MenuLink href="#about" onClick={onClose}>
                 About
                 <ArrowSvg />
               </MenuLink>
-              <MenuLink href="#">
+              <MenuLink href="#cases" onClick={onClose}>
                 Cases
                 <ArrowSvg />
               </MenuLink>
-              <MenuLink href="#">
+              <MenuLink href="#faq" onClick={onClose}>
                 FAG
                 <ArrowSvg />
               </MenuLink>
-              <MenuLink href="#">
+              <MenuLink href="#contactUs" onClick={onClose}>
                 Contact Us
                 <ArrowSvg />
               </MenuLink>

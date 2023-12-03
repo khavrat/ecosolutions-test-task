@@ -11,7 +11,7 @@ import {
 
 export const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <WrapperContent>
           <WrapperTitle>

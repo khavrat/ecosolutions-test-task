@@ -14,7 +14,7 @@
   --form-invalid-color: #d28b8b;
   --transparent-color: transparent;
 
-  --transition-duration: 2500ms;
+  --transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   --errorText-fontSize: 12px;
@@ -30,6 +30,10 @@
   --headTitleLg-fontSize: 64px;
   --count-fontSize: 100px;
   --countLg-fontSize: 164px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {

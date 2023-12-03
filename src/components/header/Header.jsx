@@ -2,7 +2,7 @@ import { useState, useLayoutEffect, useEffect } from "react";
 import menu from "../../images/icons/menu.svg";
 import { Container } from "../reusableComponents/container/Container";
 import { HeaderBlock, HeaderWrapper, Burger, Wrapper } from "./Header.styled";
-import { ButtonFull } from "../reusableComponents/buttonFull/ButtonFull";
+import { LinkFull } from "../reusableComponents/linkFull/LinkFull";
 import { changedColorHeader } from "../../helpers/changedColorHeader";
 import { Menu } from "../menu/Menu";
 import { Logo } from "../reusableComponents/logo/Logo";
@@ -43,7 +43,7 @@ export const Header = () => {
                 <img src={menu} alt="button menu" width="16" height="16" />
               </Burger>
               {windowWidth >= 768 ? (
-                <ButtonFull nameButton="Contact Us" type="button"></ButtonFull>
+                <LinkFull href="#contactUs" nameLink="Get in touch"></LinkFull>
               ) : (
                 ""
               )}

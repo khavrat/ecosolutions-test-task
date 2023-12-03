@@ -1,11 +1,11 @@
-import { Button, Dot } from "./ButtonFull.styled";
+import { Button, Dot } from "./LinkFull.styled";
 import arrowSm from "../../../images/icons/arrowSm.svg";
 
-export const ButtonFull = ({ nameButton, type }) => {
+export const LinkFull = ({ nameLink, href}) => {
   return (
     <>
-      <Button type={type}>
-        {nameButton}
+      <Button href={href}>
+        {nameLink}
         <Dot>
           <img src={arrowSm} alt="arrow" />
         </Dot>

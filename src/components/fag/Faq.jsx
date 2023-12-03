@@ -9,11 +9,11 @@ import {
   FaqListWrapper,
   Text,
 } from "./Faq.styled";
-import { ButtonFull } from "../reusableComponents/buttonFull/ButtonFull";
+import { LinkFull } from "../reusableComponents/linkFull/LinkFull";
 
 export const Faq = () => {
   return (
-    <Section>
+    <Section id="faq">
       <Container>
         <OrderWrapper>
           <TitleWrapper>
@@ -24,8 +24,8 @@ export const Faq = () => {
           </FaqListWrapper>
         </OrderWrapper>
         <Wrapper>
-          <Text>Didn't find the answer to your question? </Text>
-          <ButtonFull nameButton="Contact Us" type="button"/>
+          <Text id="contactUs">Didn't find the answer to your question? </Text>
+          <LinkFull nameLink="Contact Us" href="#contactUs" />
         </Wrapper>
       </Container>
     </Section>

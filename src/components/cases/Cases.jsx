@@ -4,7 +4,7 @@ import { Section, Wrapper, Title } from "./Cases.styled";
 
 export const Cases = () => {
   return (
-    <Section>
+    <Section id="cases">
       <Container>
         <Wrapper>
           <Title>Successful cases of our company</Title>

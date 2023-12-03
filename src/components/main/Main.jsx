@@ -5,6 +5,7 @@ import { AddressEl } from "../reusableComponents/contacts/AddressEl";
 import { MailEl } from "../reusableComponents/contacts/MailEl";
 import { CopyrightEl } from "../reusableComponents/contacts/CopyrightEl";
 import { MainImage } from "./MainImage";
+import { scrollTo } from "../../helpers/scrollTo";
 import {
   Section,
   Wrapper,
@@ -31,7 +32,7 @@ export const Main = () => {
   }, []);
 
   return (
-    <Section>
+    <Section id="main">
       <Container>
         <Wrapper>
           <TitleWrapper>
@@ -43,7 +44,7 @@ export const Main = () => {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </Text>
-            <ButtonEmpty nameButton="Learn more" type="button"></ButtonEmpty>
+            <ButtonEmpty nameButton="Learn more" type="button" onClick={()=>scrollTo("cases")}></ButtonEmpty>
           </Box>
         </Wrapper>
         <AdressWrapper>

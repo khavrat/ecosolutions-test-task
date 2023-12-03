@@ -1,8 +1,8 @@
 import { Button } from "./ButtonRound.styled";
 
-export const ButtonRound = ({ type }) => {
+export const ButtonRound = ({ type, onClick }) => {
   return (
-    <Button type={type}>
+    <Button type={type} onClick={onClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

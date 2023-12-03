@@ -62,7 +62,7 @@ export const SliderEl = () => {
         </Counter>
       </CounterContainer>
       <ArrowsContainer></ArrowsContainer>
-      <Slider {...settings}>
+      <Slider {...settings} >
         {sliderData.map((item) => (
           <a key={item.id} href="# ">
             <Card>

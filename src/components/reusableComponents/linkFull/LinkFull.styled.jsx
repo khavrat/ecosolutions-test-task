@@ -12,7 +12,7 @@ export const Dot = styled.div`
   transition: all var(--transition-duration) var(--timing-function);
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   border: none;
   border-radius: 500px;
   background-color: var(--accent-color);

@@ -7,7 +7,7 @@ export const ContactUs = () => {
     return (
       <Section>
         <Container>
-          <Title>Contact us</Title>
+          <Title >Contact us</Title>
           <Wrapper>
             <ContactBlock />
             <ContactForm />
