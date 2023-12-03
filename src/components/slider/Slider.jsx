@@ -21,41 +21,44 @@ import {
 } from "./Slider.styled";
 
 export const SliderEl = () => {
-    const [activeSlide, setActiveSlide] = useState(1);
+  const [activeSlide, setActiveSlide] = useState(1);
 
-    const settings = {
-      appendArrows: ArrowsContainer,
-      nextArrow: <CustomNextArrow></CustomNextArrow>,
-      prevArrow: <CustomPrevArrow></CustomPrevArrow>,
-      mobileFirst: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      initialSlide: 1,
-      draggable: true,
-      swipe: true,
-      touchThreshold: 10,
-      touchMove: true,
-        weitForAnimate: false,
-        beforeChange: (current, next) => setActiveSlide(next),
-      afterChange: (current) => {setActiveSlide(current)},
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+  const settings = {
+    appendArrows: ArrowsContainer,
+    nextArrow: <CustomNextArrow></CustomNextArrow>,
+    prevArrow: <CustomPrevArrow></CustomPrevArrow>,
+    mobileFirst: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 1,
+    draggable: true,
+    swipe: true,
+    touchThreshold: 10,
+    touchMove: true,
+    weitForAnimate: false,
+    beforeChange: (current, next) => setActiveSlide(next),
+    afterChange: (current) => {
+      setActiveSlide(current);
+    },
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-      ],
-    };
+      },
+    ],
+  };
 
   return (
     <>
       <CounterContainer>
         <Counter>
-          <ActiveCount>{`0${activeSlide + 1}`}</ActiveCount> / {`0${sliderData.length}`}
+          <ActiveCount>{`0${activeSlide + 1}`}</ActiveCount> /{" "}
+          {`0${sliderData.length}`}
         </Counter>
       </CounterContainer>
       <ArrowsContainer></ArrowsContainer>
