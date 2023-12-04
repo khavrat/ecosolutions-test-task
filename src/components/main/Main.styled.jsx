@@ -15,7 +15,7 @@ export const Section = styled.section`
   }
 `;
 
-export const Wrapper = styled.div`
+export const Wrap = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
     justify-content: space-between;
   }
 `;
-export const TitleWrapper = styled.div`
+export const TitleWrap = styled.div`
   @media screen and (min-width: 768px) {
     flex: 1;
     width: 50%;
@@ -79,7 +79,7 @@ export const Text = styled.p`
   }
 `;
 
-export const AdressWrapper = styled.div`
+export const AdressWrap = styled.div`
   margin-top: 24px;
   padding: 24px 0 36px 0;
   border-top: solid 1px var(--accent-color);
@@ -98,14 +98,14 @@ export const AdressWrapper = styled.div`
     justify-content: space-between;
   }
 `;
-export const AdressElWrapper = styled.div`
+export const AdressElWrap = styled.div`
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     flex: 1;
     width: 50%;
   }
 `;
 
-export const CopyWrapper = styled.div`
+export const CopyWrap = styled.div`
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     justify-content: space-between;

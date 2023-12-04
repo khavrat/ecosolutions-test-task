@@ -4,7 +4,7 @@ import { NetLinkBlack } from "../reusableComponents/netLinkSet/NetLinkBlack";
 import { AddressEl } from "../reusableComponents/contacts/AddressEl";
 import { MailEl } from "../reusableComponents/contacts/MailEl";
 import { CopyrightEl } from "../reusableComponents/contacts/CopyrightEl";
-import { FooterEl, Wrapper, AddressWrapper } from "./Footer.styled";
+import { FooterEl, Wrap, AddressWrap } from "./Footer.styled";
 import { ButtonRound } from "../reusableComponents/buttonRound/ButtonRound";
 import { scrollTo } from "../../helpers/scrollTo";
 
@@ -12,16 +12,16 @@ export const Footer = () => {
   return (
     <FooterEl>
       <Container>
-        <Wrapper>
+        <Wrap>
           <Logo onClick={() => scrollTo("main")} />
           <ButtonRound onClick={() => scrollTo("main")} />
           <NetLinkBlack />
-        </Wrapper>
-        <AddressWrapper>
+        </Wrap>
+        <AddressWrap>
           <AddressEl />
           <MailEl />
           <CopyrightEl />
-        </AddressWrapper>
+        </AddressWrap>
       </Container>
     </FooterEl>
   );

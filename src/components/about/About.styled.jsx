@@ -12,7 +12,7 @@ export const Section = styled.section`
   }
 `;
 
-export const WrapperContent = styled.div`
+export const ContentWrap = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
     margin-bottom: 100px;
@@ -22,7 +22,7 @@ export const WrapperContent = styled.div`
   }
 `;
 
-export const WrapperTitle = styled.div`
+export const TitleWrap = styled.div`
   @media screen and (min-width: 768px) {
     flex: 1;
   }
@@ -47,7 +47,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const WrapperDescr = styled.div`
+export const TextWrap = styled.div`
   @media screen and (max-width: 767px) {
     margin: 24px 0 36px 0;
   }

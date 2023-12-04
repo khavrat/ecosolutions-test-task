@@ -12,13 +12,13 @@ export const Section = styled.section`
   }
 `;
 
-export const OrderWrapper = styled.div`
+export const OrderWrap = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 24px;
   }
 `;
-export const TitleWrapper = styled.div`
+export const TitleWrap = styled.div`
   @media screen and (min-width: 768px) {
     order: 2;
     flex: 1;
@@ -46,14 +46,14 @@ export const Title = styled.h2`
     font-size: var(--headTitleMd-fontSize);
   }
 `;
-export const FaqListWrapper = styled.div`
+export const FaqListWrap = styled.div`
   @media screen and (min-width: 768px) {
     flex: 1;
     width: 50%;
   }
 `;
 
-export const Wrapper = styled.div`
+export const Wrap = styled.div`
   text-align: center;
 
   @media screen and (min-width: 768px) {

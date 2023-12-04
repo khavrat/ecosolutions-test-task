@@ -13,7 +13,6 @@ import {
   Title,
   WrapperTop,
   WrapperBottom,
-  Picture,
   Text,
   CounterContainer,
   Counter,
@@ -62,17 +61,16 @@ export const SliderEl = () => {
         </Counter>
       </CounterContainer>
       <ArrowsContainer className="container"></ArrowsContainer>
-      <Slider {...settings} >
+      <Slider {...settings}>
         {sliderData.map((item) => (
           <a key={item.id} href="# ">
             <Card>
-              <Picture>
-                <source
-                  srcSet={`${item.linkImg} 1x, ${item.likImgRetina} 2x`}
-                  media="(min-width: 360px)"
-                />
-                <img src={item.linkImg} alt={item.title} width="100%" />
-              </Picture>
+              <img
+                src={item.linkImg}
+                srcSet={`${item.linkImg} 1x, ${item.likImgRetina} 2x`}
+                alt={item.title} 
+                width="100%"
+              />
               <WrapperTop>
                 <div>
                   <Location>{item.location}</Location>

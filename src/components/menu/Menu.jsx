@@ -9,7 +9,6 @@ const menuRoot = document.getElementById("menu-root");
 
 export const Menu = ({ isOpen, onClose }) => {
   useEffect(() => {
-    console.log("isOpen :>> ", isOpen);
     const body = document.querySelector("body");
     if (isOpen === true) {
       body.classList.add("modal-open");
@@ -27,11 +26,8 @@ export const Menu = ({ isOpen, onClose }) => {
   return ReactDOM.createPortal(
     <>
       {isOpen && (
-        <Backdrop
-          onClick={handleBackdropClick}
-          className={isOpen ? "is-open" : ""}
-        >
-          <Content className={isOpen ? "is-open" : ""}>
+        <Backdrop onClick={handleBackdropClick}>
+          <Content>
             <ButtonClose onClose={onClose} />
             <ContentList onClose={onClose} />
             <Wrap>

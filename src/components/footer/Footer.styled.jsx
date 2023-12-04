@@ -6,7 +6,7 @@ export const FooterEl = styled.footer`
   border-top: solid 1px var(--accent-color);
 `;
 
-export const Wrapper = styled.div`
+export const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const AddressWrapper = styled.div`
+export const AddressWrap = styled.div`
   margin-top: 18px;
   display: flex;
   flex-direction: column;

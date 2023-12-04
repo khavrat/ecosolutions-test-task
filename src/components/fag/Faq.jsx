@@ -2,11 +2,11 @@ import { Container } from "../reusableComponents/container/Container";
 import { FaqList } from "./FaqList";
 import {
   Section,
-  OrderWrapper,
-  TitleWrapper,
+  OrderWrap,
+  TitleWrap,
   Title,
-  Wrapper,
-  FaqListWrapper,
+  Wrap,
+  FaqListWrap,
   Text,
 } from "./Faq.styled";
 import { LinkFull } from "../reusableComponents/linkFull/LinkFull";
@@ -15,18 +15,18 @@ export const Faq = () => {
   return (
     <Section id="faq">
       <Container>
-        <OrderWrapper>
-          <TitleWrapper>
+        <OrderWrap>
+          <TitleWrap>
             <Title>Frequently Asked Questions</Title>
-          </TitleWrapper>
-          <FaqListWrapper>
+          </TitleWrap>
+          <FaqListWrap>
             <FaqList />
-          </FaqListWrapper>
-        </OrderWrapper>
-        <Wrapper>
+          </FaqListWrap>
+        </OrderWrap>
+        <Wrap>
           <Text id="contactUs">Didn't find the answer to your question? </Text>
           <LinkFull nameLink="Contact Us" href="#contactUs" />
-        </Wrapper>
+        </Wrap>
       </Container>
     </Section>
   );

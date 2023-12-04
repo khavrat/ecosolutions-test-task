@@ -11,7 +11,7 @@ export const Section = styled.section`
   }
 `;
 
-export const Wrapper = styled.div`
+export const Wrap = styled.div`
   @media screen and (min-width: 768px) {
     width: 50%;
     border-right: 1px solid var(--accent-color);
@@ -30,11 +30,13 @@ export const Title = styled.h2`
   @media screen and (min-width: 768px) {
     font-size: var(--headTitleSm-fontSize);
     margin-bottom: 38px;
+    margin-left: 12px;
   }
   @media screen and (min-width: 1280px) {
     font-size: var(--headTitleMd-fontSize);
     width: 398px;
     margin-bottom: 120px;
+    margin-left: 24px;
   }
 `;
 

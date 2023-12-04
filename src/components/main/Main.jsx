@@ -8,14 +8,14 @@ import { MainImage } from "./MainImage";
 import { scrollTo } from "../../helpers/scrollTo";
 import {
   Section,
-  Wrapper,
-  TitleWrapper,
+  Wrap,
+  TitleWrap,
   HeadTitle,
   Box,
   Text,
-  AdressWrapper,
-  AdressElWrapper,
-  CopyWrapper,
+  AdressWrap,
+  AdressElWrap,
+  CopyWrap,
 } from "./Main.styled";
 
 export const Main = () => {
@@ -34,10 +34,10 @@ export const Main = () => {
   return (
     <Section id="main">
       <Container>
-        <Wrapper>
-          <TitleWrapper>
+        <Wrap>
+          <TitleWrap>
             <HeadTitle>RENEWABLE ENERGY For any task</HeadTitle>
-          </TitleWrapper>
+          </TitleWrap>
           <Box>
             <Text>
               Development and implementation of renewable non-polluting energy
@@ -46,16 +46,16 @@ export const Main = () => {
             </Text>
             <ButtonEmpty nameButton="Learn more" type="button" onClick={()=>scrollTo("cases")}></ButtonEmpty>
           </Box>
-        </Wrapper>
-        <AdressWrapper>
-          <AdressElWrapper>
+        </Wrap>
+        <AdressWrap>
+          <AdressElWrap>
             <AddressEl />
-          </AdressElWrapper>
-          <CopyWrapper>
+          </AdressElWrap>
+          <CopyWrap>
             <MailEl />
             {windowWidth >= 768 ? <CopyrightEl /> : ""}
-          </CopyWrapper>
-        </AdressWrapper>
+          </CopyWrap>
+        </AdressWrap>
         <MainImage />
       </Container>
     </Section>

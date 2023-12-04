@@ -2,22 +2,22 @@ import { Container } from "../reusableComponents/container/Container";
 import { Grid } from "../about/Grid";
 import {
   Section,
-  WrapperContent,
-  WrapperTitle,
+  ContentWrap,
   Title,
-  WrapperDescr,
-  Text
+  TitleWrap,
+  TextWrap,
+  Text,
 } from "./About.styled";
 
 export const About = () => {
   return (
     <Section id="about">
       <Container>
-        <WrapperContent>
-          <WrapperTitle>
+        <ContentWrap>
+          <TitleWrap>
             <Title>Main values of our company</Title>
-          </WrapperTitle>
-          <WrapperDescr>
+          </TitleWrap>
+          <TextWrap>
             <Text>
               EcoSolution envisions a world where sustainable energy solutions
               power a brighter and cleaner future for all. We aspire to be at
@@ -25,8 +25,8 @@ export const About = () => {
               leading the way in innovative technologies that harness the power
               of nature to meet the world's energy needs.
             </Text>
-          </WrapperDescr>
-        </WrapperContent>
+          </TextWrap>
+        </ContentWrap>
         <Grid />
       </Container>
     </Section>

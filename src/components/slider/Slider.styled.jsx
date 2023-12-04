@@ -7,14 +7,6 @@ export const Card = styled.div`
   overflow: hidden;
 `;
 
-export const Picture = styled.picture`
-& > img {
-    width: 100%,
-    height: 100%;
-    object-fit: cover;
-}
-`;
-
 export const WrapperTop = styled.div`
   display: flex;
   justify-content: space-between;
@@ -118,11 +110,16 @@ export const CustomPrevArrow = styled.button`
     right: 80px;
     left: auto;
   }
+
+  @media screen and (min-width: 768px) {
+    right: 92px;
+  }
+
   @media screen and (min-width: 1280px) {
     width: 84px;
     height: 84px;
     top: -160px;
-    right: 110px;
+    right: 134px;
   }
 `;
 
@@ -151,11 +148,14 @@ export const CustomNextArrow = styled.button`
     background-position: center center;
   }
 
+  @media screen and (min-width: 768px) {
+    right: 12px;
+  }
   @media screen and (min-width: 1280px) {
     width: 84px;
     height: 84px;
     top: -200px;
-    right: 0;
+    right: 24px;
   }
 `;
 export const WrapperBottom = styled.div`
