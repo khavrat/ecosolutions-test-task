@@ -4,7 +4,7 @@ import { Section, Title, Line, Text, Span } from "./Electricity.styled";
 
 export const Electricity = () => {
   const [currentCount, setCurrentCount] = useState(1134147814);
-  const [formattedCount, setFormattedCount] = useState(0);
+  const [formattedCount, setFormattedCount] = useState(1134147814);
   const to = 9999999999;
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const HeaderBlock = styled.header`
+export const HeaderEl = styled.header`
   position: fixed;
   top: 0;
   z-index: 2;
@@ -19,30 +19,13 @@ export const HeaderBlock = styled.header`
   }
 `;
 
-export const HeaderWrapper = styled.div`
+export const HeaderWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
-export const Burger = styled.button`
-  border: none;
-  border-radius: 50%;
-  background-color: var(--burger-bg-color);
-  display: inline-flex;
-  padding: 12px;
-  justify-content: center;
-  align-items: center;
-
-  transition: background-color var(--transition-duration) var(--timing-function);
-
-  &:focus,
-  :hover {
-    background-color: var(--accent-color);
-  }
-`;
-
-export const Wrapper = styled.div`
+export const Wrap = styled.div`
   display: flex;
   gap: 12px;
 `;

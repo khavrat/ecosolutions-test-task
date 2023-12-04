@@ -1,23 +1,20 @@
+import ReactDOM from "react-dom";
 import { useEffect } from "react";
-import {ArrowSvg} from "../reusableComponents/arrowSvg"
+import { ButtonClose } from "./buttonClose/ButtonClose";
 import { NetLink } from "../reusableComponents/netLinkSet/NetLinkSet";
-import {
-  Backdrop,
-  Content,
-  CloseButton,
-  MenuLinkWrapper,
-  MenuLink,
-  CustomClass,
-} from "./Menu.styled";
+import { ContentList } from "./contentList/ContentList";
+import { Backdrop, Content, Wrap } from "./Menu.styled";
+
+const menuRoot = document.getElementById("menu-root");
 
 export const Menu = ({ isOpen, onClose }) => {
-
   useEffect(() => {
+    console.log("isOpen :>> ", isOpen);
     const body = document.querySelector("body");
     if (isOpen === true) {
-        body.classList.add("modal-open");
+      body.classList.add("modal-open");
     } else {
-        body.classList.remove("modal-open");
+      body.classList.remove("modal-open");
     }
   }, [isOpen]);
 
@@ -27,57 +24,23 @@ export const Menu = ({ isOpen, onClose }) => {
     }
   };
 
-  return (
+  return ReactDOM.createPortal(
     <>
       {isOpen && (
-        <Backdrop onClick={handleBackdropClick}>
-          <Content>
-            <CloseButton onClick={onClose}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                stroke="currentColor"
-              >
-                <path
-                  d="M5.83331 5.83325L14.1666 14.1666M5.83331 14.1666L14.1666 5.83325"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              close
-            </CloseButton>
-            <MenuLinkWrapper>
-              <MenuLink href="#main" onClick={onClose}>
-                Main
-                <ArrowSvg />
-              </MenuLink>
-              <MenuLink href="#about" onClick={onClose}>
-                About
-                <ArrowSvg />
-              </MenuLink>
-              <MenuLink href="#cases" onClick={onClose}>
-                Cases
-                <ArrowSvg />
-              </MenuLink>
-              <MenuLink href="#faq" onClick={onClose}>
-                FAG
-                <ArrowSvg />
-              </MenuLink>
-              <MenuLink href="#contactUs" onClick={onClose}>
-                Contact Us
-                <ArrowSvg />
-              </MenuLink>
-            </MenuLinkWrapper>
-            <CustomClass>
+        <Backdrop
+          onClick={handleBackdropClick}
+          className={isOpen ? "is-open" : ""}
+        >
+          <Content className={isOpen ? "is-open" : ""}>
+            <ButtonClose onClose={onClose} />
+            <ContentList onClose={onClose} />
+            <Wrap>
               <NetLink />
-            </CustomClass>
+            </Wrap>
           </Content>
         </Backdrop>
       )}
-    </>
+    </>,
+    menuRoot
   );
 };

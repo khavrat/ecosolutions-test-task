@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const Section = styled.h2`
+export const Section = styled.section`
   padding: 18px 0;
 
   @media screen and (min-width: 768px) {

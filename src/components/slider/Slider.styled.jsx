@@ -83,7 +83,10 @@ export const Title = styled.h3`
 `;
 
 export const ArrowsContainer = styled.div`
-  position: relative;
+  &.container {
+    position: relative;
+    width: 144px;
+  }
 `;
 
 export const CustomPrevArrow = styled.button`
@@ -98,7 +101,8 @@ export const CustomPrevArrow = styled.button`
   background-position: center center;
   position: absolute;
   top: -62px;
-  left: 190px;
+  right: 80px;
+  left: auto;
 
   transition: all var(--transition-duration) var(--timing-function);
 
@@ -111,22 +115,14 @@ export const CustomPrevArrow = styled.button`
 
   @media screen and (min-width: 360px) {
     top: -62px;
-    left: 170px;
-  }
-  @media screen and (min-width: 380px) {
-    left: 190px;
-  }
-  @media screen and (min-width: 768px) {
-    left: 560px;
+    right: 80px;
+    left: auto;
   }
   @media screen and (min-width: 1280px) {
     width: 84px;
     height: 84px;
     top: -160px;
-    left: 1026px;
-  }
-  @media screen and (min-width: 1440px) {
-    left: 1046px;
+    right: 110px;
   }
 `;
 
@@ -204,6 +200,11 @@ export const CounterContainer = styled.div`
   @media screen and (min-width: 1280px) {
     top: 60px;
     right: 380px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 60px;
+    right: 450px;
   }
 `;
 

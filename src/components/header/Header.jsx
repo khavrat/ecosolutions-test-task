@@ -1,15 +1,13 @@
 import { useState, useLayoutEffect, useEffect } from "react";
-import menu from "../../images/icons/menu.svg";
 import { Container } from "../reusableComponents/container/Container";
-import { HeaderBlock, HeaderWrapper, Burger, Wrapper } from "./Header.styled";
+import { HeaderEl, HeaderWrap, Wrap } from "./Header.styled";
 import { LinkFull } from "../reusableComponents/linkFull/LinkFull";
 import { changedColorHeader } from "../../helpers/changedColorHeader";
-import { Menu } from "../menu/Menu";
 import { Logo } from "../reusableComponents/logo/Logo";
+import { ButtonOpen } from "../menu/buttonOpen/ButtonOpen";
 
 export const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", changedColorHeader);
@@ -28,30 +26,24 @@ export const Header = () => {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <>
-      <HeaderBlock>
+      <HeaderEl>
         <Container>
-          <HeaderWrapper>
+          <HeaderWrap>
             <Logo />
-            <Wrapper>
-              <Burger onClick={toggleMenu}>
-                <img src={menu} alt="button menu" width="16" height="16" />
-              </Burger>
+            <Wrap>
+              <ButtonOpen />
               {windowWidth >= 768 ? (
                 <LinkFull href="#contactUs" nameLink="Get in touch"></LinkFull>
               ) : (
                 ""
               )}
-            </Wrapper>
-          </HeaderWrapper>
+            </Wrap>
+          </HeaderWrap>
         </Container>
-      </HeaderBlock>
-      <Menu isOpen={isMenuOpen} onClose={toggleMenu} />
+      </HeaderEl>
     </>
   );
 };

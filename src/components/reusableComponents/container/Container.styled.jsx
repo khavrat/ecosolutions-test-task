@@ -5,13 +5,13 @@ export const Content = styled.div`
   margin-left: auto;
   position: relative;
 
-  @media (min-width: 360px) and (max-width: 379px) {
+  @media (min-width: 360px) and (max-width: 479px) {
     width: 100%;
     padding: 0 20px;
   }
 
-  @media (min-width: 380px) {
-    width: 380px;
+  @media (min-width: 480px) {
+    width: 480px;
     padding: 0 20px;
   }
 
