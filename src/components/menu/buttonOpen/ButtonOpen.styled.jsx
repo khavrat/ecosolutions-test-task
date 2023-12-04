@@ -1,11 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Burger = styled.button`
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   border: none;
   border-radius: 50%;
