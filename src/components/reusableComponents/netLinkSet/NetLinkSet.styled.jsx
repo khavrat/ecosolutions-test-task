@@ -6,6 +6,7 @@ export const NetLinkWrapper = styled.div`
 `;
 
 export const NetLinkFb = styled.a`
+  display: inline-block;
   transition: all var(--transition-duration) var(--timing-function);
 
   &:hover {
@@ -21,6 +22,7 @@ export const NetLinkFb = styled.a`
 `;
 
 export const NetLinkIn = styled.a`
+  display: inline-block;
   transition: all var(--transition-duration) var(--timing-function);
 
   &:hover {

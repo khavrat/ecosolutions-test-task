@@ -17,8 +17,25 @@ export const Menu = ({ isOpen, onClose }) => {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleCloseByEsc = (e) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        onClose();
+        e.target.blur();
+      }
+    };
+    if (isOpen) {
+      document.addEventListener("keydown", handleCloseByEsc);
+    }
+    return () => {
+      document.removeEventListener("keydown", handleCloseByEsc);
+    };
+  }, [isOpen, onClose]);
+
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {
+      e.preventDefault();
       onClose();
     }
   };
@@ -28,7 +45,7 @@ export const Menu = ({ isOpen, onClose }) => {
       {isOpen && (
         <Backdrop onClick={handleBackdropClick}>
           <Content>
-            <ButtonClose onClose={onClose} />
+            <ButtonClose type="button" onClose={onClose} />
             <ContentList onClose={onClose} />
             <Wrap>
               <NetLink />

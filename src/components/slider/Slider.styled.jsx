@@ -82,6 +82,7 @@ export const ArrowsContainer = styled.div`
 `;
 
 export const CustomPrevArrow = styled.button`
+  display: inline-block;
   background-color: var(--bg-color);
   width: 66px;
   height: 66px;
@@ -98,7 +99,8 @@ export const CustomPrevArrow = styled.button`
 
   transition: all var(--transition-duration) var(--timing-function);
 
-  &:hover {
+  &:hover,
+  :focus {
     border: 1px solid var(--accent-color);
     background-image: url(${arrowLight});
     background-repeat: no-repeat;
@@ -124,6 +126,7 @@ export const CustomPrevArrow = styled.button`
 `;
 
 export const CustomNextArrow = styled.button`
+  display: inline-block;
   background-color: var(--bg-color);
   width: 66px;
   height: 66px;
@@ -184,7 +187,6 @@ export const Text = styled.p`
   }
 `;
 
-
 // counter
 export const CounterContainer = styled.div`
   @media screen and (max-width: 767px) {
@@ -227,4 +229,3 @@ export const ActiveCount = styled.span`
   line-height: 1.2;
   letter-spacing: -1.12px;
 `;
-

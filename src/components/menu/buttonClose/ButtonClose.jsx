@@ -1,8 +1,8 @@
 import { Button } from "./ButtonClose.styled";
 
-export const ButtonClose = ({onClose}) => {
+export const ButtonClose = ({type, onClose}) => {
     return (
-      <Button onClick={onClose}>
+      <Button type={type} onClick={onClose}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"

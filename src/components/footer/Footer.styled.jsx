@@ -17,6 +17,7 @@ export const Wrap = styled.div`
     > :last-child {
       width: 100%;
       margin-top: 18px;
+      justify-content: center;
       align-self: center;
     }
   }

@@ -56,7 +56,7 @@ export const SliderEl = () => {
     <>
       <CounterContainer>
         <Counter>
-          <ActiveCount>{`0${activeSlide + 1}`}</ActiveCount> /{" "}
+          <ActiveCount>{`0${activeSlide + 1}`}</ActiveCount> /
           {`0${sliderData.length}`}
         </Counter>
       </CounterContainer>

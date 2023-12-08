@@ -16,7 +16,7 @@ export const FaqList = () => {
       {faqList.map((fagEl) => {
         return (
           <li key={fagEl.id}>
-            <Button onClick={() => handleClickFagEl(fagEl.id)}>
+            <Button type="button" onClick={() => handleClickFagEl(fagEl.id)}>
               {fagEl.id === fagIsOpen ? (
                 <img src={minus} alt="open" />
               ) : (

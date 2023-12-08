@@ -34,7 +34,7 @@ export const Header = () => {
           <HeaderWrap>
             <Logo />
             <Wrap>
-              <ButtonOpen />
+              <ButtonOpen type="button"/>
               {windowWidth >= 768 ? (
                 <LinkFull href="#contactUs" nameLink="Get in touch"></LinkFull>
               ) : (

@@ -14,7 +14,7 @@ export const Footer = () => {
       <Container>
         <Wrap>
           <Logo onClick={() => scrollTo("main")} />
-          <ButtonRound onClick={() => scrollTo("main")} />
+          <ButtonRound type="button" onClick={() => scrollTo("main")} />
           <NetLinkBlack />
         </Wrap>
         <AddressWrap>

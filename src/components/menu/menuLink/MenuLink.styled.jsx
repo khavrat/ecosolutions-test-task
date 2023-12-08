@@ -1,9 +1,8 @@
 import styled from "@emotion/styled";
 
 export const Link = styled.a`
-  display: flex;
+  display: inline-flex;
   gap: 8px;
-  width: 100%;
   color: var(--wight-color);
   font-family: Fira Sans;
   font-size: var(--link-fontSize);
