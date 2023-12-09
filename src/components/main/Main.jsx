@@ -1,11 +1,11 @@
 import { useState, useLayoutEffect } from "react";
+import { scrollTo } from "../../helpers/scrollTo";
 import { Container } from "../reusableComponents/container/Container";
 import { ButtonEmpty } from "../reusableComponents/buttonEmpty/ButtonEmpty";
 import { AddressEl } from "../reusableComponents/contacts/AddressEl";
 import { MailEl } from "../reusableComponents/contacts/MailEl";
 import { CopyrightEl } from "../reusableComponents/contacts/CopyrightEl";
 import { MainImage } from "./MainImage";
-import { scrollTo } from "../../helpers/scrollTo";
 import {
   Section,
   Wrap,

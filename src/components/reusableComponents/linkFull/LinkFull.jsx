@@ -1,5 +1,5 @@
-import { Link, Dot } from "./LinkFull.styled";
 import arrowSm from "../../../images/icons/arrowSm.svg";
+import { Link, Dot } from "./LinkFull.styled";
 
 export const LinkFull = ({ nameLink, href}) => {
   return (

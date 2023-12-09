@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect } from "react";
-import { GridContainer, ImageCard } from "./Grid.styled";
 import { AboutCard } from "../reusableComponents/aboutCard/AboutCard";
+import { GridContainer, ImageCard } from "./Grid.styled";
 import charge from "../../images/icons/card/charge.svg";
 import circle from "../../images/icons/card/circle.svg";
 import global from "../../images/icons/card/global.svg";

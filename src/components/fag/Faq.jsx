@@ -1,4 +1,5 @@
 import { Container } from "../reusableComponents/container/Container";
+import { LinkFull } from "../reusableComponents/linkFull/LinkFull";
 import { FaqList } from "./FaqList";
 import {
   Section,
@@ -9,7 +10,6 @@ import {
   FaqListWrap,
   Text,
 } from "./Faq.styled";
-import { LinkFull } from "../reusableComponents/linkFull/LinkFull";
 
 export const Faq = () => {
   return (

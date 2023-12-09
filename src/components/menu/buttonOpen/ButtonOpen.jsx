@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Burger } from "./ButtonOpen.styled";
 import menu from "../../../images/icons/menu.svg";
 import { Menu } from "../Menu";
+import { Burger } from "./ButtonOpen.styled";
 
 export const ButtonOpen = ({ type }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -1,5 +1,5 @@
-import { List } from "./ContentList.styled";
 import { MenuLink } from "../menuLink/MenuLink"
+import { List } from "./ContentList.styled";
 
 export const ContentList = ({ onClose }) => {
   return (

@@ -1,10 +1,10 @@
 import { useState, useLayoutEffect, useEffect } from "react";
-import { Container } from "../reusableComponents/container/Container";
-import { HeaderEl, HeaderWrap, Wrap } from "./Header.styled";
-import { LinkFull } from "../reusableComponents/linkFull/LinkFull";
 import { changedColorHeader } from "../../helpers/changedColorHeader";
+import { Container } from "../reusableComponents/container/Container";
+import { LinkFull } from "../reusableComponents/linkFull/LinkFull";
 import { Logo } from "../reusableComponents/logo/Logo";
 import { ButtonOpen } from "../menu/buttonOpen/ButtonOpen";
+import { HeaderEl, HeaderWrap, Wrap } from "./Header.styled";
 
 export const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

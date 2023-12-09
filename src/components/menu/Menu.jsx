@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom";
 import { useEffect } from "react";
-import { ButtonClose } from "./buttonClose/ButtonClose";
 import { NetLink } from "../reusableComponents/netLinkSet/NetLinkSet";
+import { ButtonClose } from "./buttonClose/ButtonClose";
 import { ContentList } from "./contentList/ContentList";
 import { Backdrop, Content, Wrap } from "./Menu.styled";
 
