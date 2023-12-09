@@ -11,7 +11,7 @@ import {
   ButtonWrapper,
 } from "./ContactForm.styled";
 import { ButtonEmpty } from "../reusableComponents/buttonEmpty/ButtonEmpty";
-import { showMessageToast } from "../../helpers/showToast";
+import { showMessageToast } from "../../helpers/showMessageToast";
 
 export const ContactForm = () => {
   const formik = useFormik({
