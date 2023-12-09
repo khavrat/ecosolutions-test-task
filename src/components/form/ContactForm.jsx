@@ -11,6 +11,7 @@ import {
   ButtonWrapper,
 } from "./ContactForm.styled";
 import { ButtonEmpty } from "../reusableComponents/buttonEmpty/ButtonEmpty";
+import { showMessageToast } from "../../helpers/showToast";
 
 export const ContactForm = () => {
   const formik = useFormik({
@@ -25,6 +26,7 @@ export const ContactForm = () => {
       localStorage.clear();
       resetForm();
       setSubmitting(false);
+      showMessageToast("Your contacts are sent successfully");
     },
   });
 
