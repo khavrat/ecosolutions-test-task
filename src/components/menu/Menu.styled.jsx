@@ -22,6 +22,7 @@ export const Content = styled.div`
   border-radius: 25px;
   padding: 16px 24px 24px;
   z-index: 6;
+  overflow: hidden;
 
   @media screen and (max-width: 479px) {
     left: 20px;
