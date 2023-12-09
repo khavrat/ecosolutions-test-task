@@ -16,9 +16,13 @@ export const FaqList = () => {
       {faqList.map((fagEl) => {
         return (
           <li key={fagEl.id}>
-            <Button type="button" onClick={() => handleClickFagEl(fagEl.id)}>
+            <Button
+              type="button"
+              aria-label="unfold or fold the answer to the question"
+              onClick={() => handleClickFagEl(fagEl.id)}
+            >
               {fagEl.id === fagIsOpen ? (
-                <img src={minus} alt="open" />
+                <img src={minus} alt="close" />
               ) : (
                 <img src={add} alt="open" />
               )}
@@ -27,7 +31,7 @@ export const FaqList = () => {
             <Pocket
               id={fagEl.id}
               className={fagEl.id === fagIsOpen ? "fag-open" : ""}
-              isOpen={fagEl.id===fagIsOpen}
+              isOpen={fagEl.id === fagIsOpen}
             >
               <Text>{fagEl.a}</Text>
             </Pocket>

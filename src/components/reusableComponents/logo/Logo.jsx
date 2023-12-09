@@ -10,7 +10,12 @@ export const Logo = () => {
   };
 
   return (
-    <a href="# " onMouseEnter={handleHover} onMouseLeave={handleHover}>
+    <a
+      href="# "
+      aria-label="go to the main"
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHover}
+    >
       {isHovered ? (
         <img src={logoHover} alt="logo" />
       ) : (

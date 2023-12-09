@@ -24,8 +24,18 @@ export const SliderEl = () => {
 
   const settings = {
     appendArrows: ArrowsContainer,
-    nextArrow: <CustomNextArrow></CustomNextArrow>,
-    prevArrow: <CustomPrevArrow></CustomPrevArrow>,
+    nextArrow: (
+      <CustomNextArrow
+        type="button"
+        aria-label="to the next slide"
+      ></CustomNextArrow>
+    ),
+    prevArrow: (
+      <CustomPrevArrow
+        type="button"
+        aria-label="to the previous slide"
+      ></CustomPrevArrow>
+    ),
     mobileFirst: true,
     infinite: true,
     speed: 500,
@@ -63,12 +73,13 @@ export const SliderEl = () => {
       <ArrowsContainer className="container"></ArrowsContainer>
       <Slider {...settings}>
         {sliderData.map((item) => (
-          <a key={item.id} href="# ">
+          <a key={item.id} href="# " aria-label="go into the detail">
             <Card>
               <img
                 src={item.linkImg}
                 srcSet={`${item.linkImg} 1x, ${item.likImgRetina} 2x`}
-                alt={item.title} 
+                loading="lazy"
+                alt={item.title}
                 width="100%"
               />
               <WrapperTop>

@@ -5,6 +5,7 @@ export const NetLinkBlack = () => {
       <Wrapper>
         <NetLink
           href="https://www.facebook.com/"
+          aria-label="go to the facebook"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -31,6 +32,7 @@ export const NetLinkBlack = () => {
         </NetLink>
         <NetLinkIn
           href="https://www.instagram.com/"
+          aria-label="go to the instagram"
           target="_blank"
           rel="noopener noreferrer"
         >

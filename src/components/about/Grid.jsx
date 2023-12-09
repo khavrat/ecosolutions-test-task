@@ -52,7 +52,7 @@ export const Grid = () => {
                 srcSet={`${qualityMd} 1x, ${qualityMdX2} 2x`}
                 media="(min-width: 768px)"
               />
-              <img src={qualityMd} alt="workmen" width="100%" />
+              <img src={qualityMd} loading="lazy" alt="workmen" width="100%" />
             </picture>
           </ImageCard>
           <ImageCard>
@@ -65,7 +65,12 @@ export const Grid = () => {
                 srcSet={`${innovationMd} 1x, ${innovationMdX2} 2x`}
                 media="(min-width: 768px)"
               />
-              <img src={innovationMd} alt="innovations" width="100%" />
+              <img
+                src={innovationMd}
+                loading="lazy"
+                alt="innovations"
+                width="100%"
+              />
             </picture>
           </ImageCard>
         </>
