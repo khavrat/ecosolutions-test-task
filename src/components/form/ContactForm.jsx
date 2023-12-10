@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useFormik } from "formik";
+import texts from "../../data/texts.json";
 import { validationContactShema } from "../../helpers/validationContactSchema";
 import { showMessageToast } from "../../helpers/showMessageToast";
 import { ButtonEmpty } from "../reusableComponents/buttonEmpty/ButtonEmpty";
@@ -52,7 +53,7 @@ export const ContactForm = () => {
   return (
     <Form onSubmit={formik.handleSubmit}>
       <Wrapper>
-        <Label htmlFor="fullName">* Full name:</Label>
+        <Label htmlFor="fullName">{texts.contactForm.label.fullName}</Label>
         <Input
           id="fullName"
           name="fullName"
@@ -70,7 +71,7 @@ export const ContactForm = () => {
       </Wrapper>
 
       <Wrapper>
-        <Label htmlFor="email">* E-mail:</Label>
+        <Label htmlFor="email">{texts.contactForm.label.email}</Label>
         <Input
           id="email"
           name="email"
@@ -85,7 +86,7 @@ export const ContactForm = () => {
         ) : null}
       </Wrapper>
       <Wrapper>
-        <Label htmlFor="phone">* Phone:</Label>
+        <Label htmlFor="phone">{ texts.contactForm.label.phone}</Label>
         <Input
           id="phone"
           name="phone"
@@ -100,7 +101,7 @@ export const ContactForm = () => {
         ) : null}
       </Wrapper>
 
-      <Label htmlFor="message">Message:</Label>
+      <Label htmlFor="message">Message:{texts.contactForm.label.message }</Label>
       <Textarea
         id="message"
         name="message"

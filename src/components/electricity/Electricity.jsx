@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import texts from "../../data/texts.json";
 import { Container } from "../reusableComponents/container/Container";
 import { Section, Title, Line, Text, Span } from "./Electricity.styled";
 
@@ -29,11 +30,11 @@ export const Electricity = () => {
   return (
     <Section>
       <Container>
-        <Title>Electricity we produced for all time</Title>
+        <Title>{texts.electricity.title}</Title>
         <Line></Line>
         <Text>
           <Span>{formattedCount}</Span>
-          kWh
+          {texts.electricity.text}
         </Text>
       </Container>
     </Section>

@@ -1,3 +1,4 @@
+import texts from "../../data/texts.json"
 import { Container } from "../reusableComponents/container/Container";
 import { SliderEl } from "../slider/Slider";
 import { Section, Wrap, Title } from "./Cases.styled";
@@ -7,7 +8,7 @@ export const Cases = () => {
     <Section id="cases">
       <Container>
         <Wrap>
-          <Title>Successful cases of our company</Title>
+          <Title>{texts.cases.title }</Title>
         </Wrap>
         <SliderEl />
       </Container>

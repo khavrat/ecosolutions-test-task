@@ -1,3 +1,4 @@
+import texts from "../../data/texts.json";
 import { Container } from "../reusableComponents/container/Container";
 import { LinkFull } from "../reusableComponents/linkFull/LinkFull";
 import { FaqList } from "./FaqList";
@@ -17,14 +18,14 @@ export const Faq = () => {
       <Container>
         <OrderWrap>
           <TitleWrap>
-            <Title>Frequently Asked Questions</Title>
+            <Title>{texts.faq.title}</Title>
           </TitleWrap>
           <FaqListWrap>
             <FaqList />
           </FaqListWrap>
         </OrderWrap>
         <Wrap>
-          <Text id="contactUs">Didn't find the answer to your question? </Text>
+          <Text id="contactUs">{texts.faq.text}</Text>
           <LinkFull nameLink="Contact Us" href="#contactUs" />
         </Wrap>
       </Container>

@@ -1,0 +1,63 @@
+{
+  "main": {
+    "title": "RENEWABLE ENERGY For any task",
+    "discription": "Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass"
+  },
+  "about": {
+    "title": "Main values of our company",
+    "discription": "EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs."
+  },
+  "grid": {
+    "title1": "Openness",
+    "text1": "to the world, people, new ideas and projects",
+    "title2": "Responsibility",
+    "text2": "we are aware that the results of our work have an impact on our lives and the lives of future generations",
+    "title3": "Innovation",
+    "text3": "we use the latest technology to implement non-standard solutions",
+    "title4": "Quality",
+    "text4": "we do not strive to be the first among others, but we want to be the best in our business"
+  },
+  "cases": {
+    "title": "Successful cases of our company"
+  },
+  "contactBlock": {
+    "namePhone": "Phone:",
+    "phone1": "38 (098) 12 34 567",
+    "phone2": "38 (093) 12 34 567",
+    "nameEmail": "E-mail:",
+    "email": "office@ecosolution.com",
+    "nameAddress": "Address:",
+    "address": "79005, Ukraine, Lvivstreet. Shota Rustaveli, 7",
+    "nameNetworks": "Social Networks:",
+    "copy": "ecosolution",
+    "copyDate": "2023"
+  },
+  "contactUs": {
+    "title": "Contact us"
+  },
+  "electricity": {
+    "title": "Electricity we produced for all time",
+    "text": "kWh"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "text": "Didn't find the answer to your question?"
+  },
+  "contactForm": {
+    "label": {
+      "fullName": "* Full name:",
+      "email": "* E-mail:",
+      "phone": "* Phone:",
+      "message": "Message:"
+    }
+  },
+  "menu": {
+    "links": {
+      "link1": "Main",
+      "link2": "About",
+      "link3": "Cases",
+      "link4": "FAG",
+      "link5": "Contact Us"
+    }
+  }
+}

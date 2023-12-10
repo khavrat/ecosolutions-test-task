@@ -1,4 +1,5 @@
 import { useState, useLayoutEffect } from "react";
+import texts from "../../data/texts.json";
 import { scrollTo } from "../../helpers/scrollTo";
 import { Container } from "../reusableComponents/container/Container";
 import { ButtonEmpty } from "../reusableComponents/buttonEmpty/ButtonEmpty";
@@ -36,15 +37,15 @@ export const Main = () => {
       <Container>
         <Wrap>
           <TitleWrap>
-            <HeadTitle>RENEWABLE ENERGY For any task</HeadTitle>
+            <HeadTitle>{texts.main.title}</HeadTitle>
           </TitleWrap>
           <Box>
-            <Text>
-              Development and implementation of renewable non-polluting energy
-              sources, generating power generation using energy wind, sun,
-              water, biomass
-            </Text>
-            <ButtonEmpty nameButton="Learn more" type="button" onClick={()=>scrollTo("cases")}></ButtonEmpty>
+            <Text>{texts.main.discription}</Text>
+            <ButtonEmpty
+              nameButton="Learn more"
+              type="button"
+              onClick={() => scrollTo("cases")}
+            ></ButtonEmpty>
           </Box>
         </Wrap>
         <AdressWrap>

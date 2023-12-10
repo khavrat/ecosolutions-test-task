@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect } from "react";
+import texts from "../../data/texts.json"
 import { AboutCard } from "../reusableComponents/aboutCard/AboutCard";
-import { GridContainer, ImageCard } from "./Grid.styled";
 import charge from "../../images/icons/card/charge.svg";
 import circle from "../../images/icons/card/circle.svg";
 import global from "../../images/icons/card/global.svg";
@@ -13,6 +13,7 @@ import innovationMd from "../../images/about/innovationMd.jpg"
 import innovationMdX2 from "../../images/about/innovationMdX2.jpg";
 import innovationLg from "../../images/about/innovationLg.jpg";
 import innovationLgX2 from "../../images/about/innovationLgX2.jpg";
+import { GridContainer, ImageCard } from "./Grid.styled";
 
 
 export const Grid = () => {
@@ -32,13 +33,13 @@ export const Grid = () => {
     <GridContainer>
       <AboutCard
         label={circle}
-        title="Openness"
-        text="to the world, people, new ideas and projects"
+        title={texts.grid.title1}
+        text={texts.grid.text1}
       />
       <AboutCard
         label={global}
-        title="Responsibility"
-        text="we are aware that the results of our work have an impact on our lives and the lives of future generations"
+        title={texts.grid.title2}
+        text={texts.grid.text2}
       />
       {windowWidth >= 768 ? (
         <>
@@ -79,13 +80,13 @@ export const Grid = () => {
       )}
       <AboutCard
         label={charge}
-        title="Innovation"
-        text="we use the latest technology to implement non-standard solutions"
+        title={texts.grid.title3}
+        text={texts.grid.text3}
       />
       <AboutCard
         label={ranking}
-        title="Quality"
-        text="we do not strive to be the first among others, but we want to be the best in our business"
+        title={texts.grid.title4}
+        text={texts.grid.text4}
       />
     </GridContainer>
   );
