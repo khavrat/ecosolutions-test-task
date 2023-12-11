@@ -26,14 +26,14 @@ export const SliderEl = () => {
     appendArrows: ArrowsContainer,
     nextArrow: (
       <CustomNextArrow
-        type="button"
-        aria-label="to the next slide"
+        // type="button"
+        // aria-label="to the next slide"
       ></CustomNextArrow>
     ),
     prevArrow: (
       <CustomPrevArrow
-        type="button"
-        aria-label="to the previous slide"
+        // type="button"
+        // aria-label="to the previous slide"
       ></CustomPrevArrow>
     ),
     mobileFirst: true,
