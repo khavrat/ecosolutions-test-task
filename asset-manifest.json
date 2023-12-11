@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolutions-test-task/static/css/main.854c410c.css",
-    "main.js": "/ecosolutions-test-task/static/js/main.7422ce40.js",
+    "main.js": "/ecosolutions-test-task/static/js/main.eba08d95.js",
     "static/media/heroLgX2.jpg": "/ecosolutions-test-task/static/media/heroLgX2.580b9b8eee923be17482.jpg",
     "static/media/heroMdX2.jpg": "/ecosolutions-test-task/static/media/heroMdX2.15461b9131b90264f7ad.jpg",
     "static/media/cardImg2x2.jpg": "/ecosolutions-test-task/static/media/cardImg2x2.7644d305dc243ca2280c.jpg",
@@ -40,10 +40,10 @@
     "static/media/minus.svg": "/ecosolutions-test-task/static/media/minus.d12460605d061b33f455d3a8e293ff70.svg",
     "static/media/menu.svg": "/ecosolutions-test-task/static/media/menu.388c7838328211dc8d8856c58eee3ae0.svg",
     "main.854c410c.css.map": "/ecosolutions-test-task/static/css/main.854c410c.css.map",
-    "main.7422ce40.js.map": "/ecosolutions-test-task/static/js/main.7422ce40.js.map"
+    "main.eba08d95.js.map": "/ecosolutions-test-task/static/js/main.eba08d95.js.map"
   },
   "entrypoints": [
     "static/css/main.854c410c.css",
-    "static/js/main.7422ce40.js"
+    "static/js/main.eba08d95.js"
   ]
 }
