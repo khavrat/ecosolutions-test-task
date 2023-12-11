@@ -2,8 +2,6 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { sliderData } from "../../data/sliderData";
-import { ButtonRound } from "../reusableComponents/buttonRound/ButtonRound";
 import {
   ArrowsContainer,
   CustomPrevArrow,
@@ -17,7 +15,9 @@ import {
   CounterContainer,
   Counter,
   ActiveCount,
-} from "../../components/slider/Slider.styled";
+} from "./Slider.styled";
+import { sliderData } from "../../data/sliderData";
+import { ButtonRound } from "../reusableComponents/buttonRound/ButtonRound";
 
 export const SliderEl = () => {
   const [activeSlide, setActiveSlide] = useState(1);
