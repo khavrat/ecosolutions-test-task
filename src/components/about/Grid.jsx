@@ -5,14 +5,7 @@ import charge from "../../images/icons/card/charge.svg";
 import circle from "../../images/icons/card/circle.svg";
 import global from "../../images/icons/card/global.svg";
 import ranking from "../../images/icons/card/ranking.svg";
-import qualityMd from "../../images/about/qualityMd.jpg"
-import qualityMdX2 from "../../images/about/qualityMdX2.jpg";
-import qualityLg from "../../images/about/qualityLg.jpg";
-import qualityLgX2 from "../../images/about/qualityLgX2.jpg";
-import innovationMd from "../../images/about/innovationMd.jpg"
-import innovationMdX2 from "../../images/about/innovationMdX2.jpg";
-import innovationLg from "../../images/about/innovationLg.jpg";
-import innovationLgX2 from "../../images/about/innovationLgX2.jpg";
+import { GridFirstPicture, GridSecondPicture } from "./GridPicture";
 import { GridContainer, ImageCard } from "./Grid.styled";
 
 
@@ -44,35 +37,10 @@ export const Grid = () => {
       {windowWidth >= 768 ? (
         <>
           <ImageCard>
-            <picture>
-              <source
-                srcSet={`${qualityLg} 1x, ${qualityLgX2} 2x`}
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcSet={`${qualityMd} 1x, ${qualityMdX2} 2x`}
-                media="(min-width: 768px)"
-              />
-              <img src={qualityMd} loading="lazy" alt="workmen" width="100%" />
-            </picture>
+            <GridFirstPicture/>
           </ImageCard>
           <ImageCard>
-            <picture>
-              <source
-                srcSet={`${innovationLg} 1x, ${innovationLgX2} 2x`}
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcSet={`${innovationMd} 1x, ${innovationMdX2} 2x`}
-                media="(min-width: 768px)"
-              />
-              <img
-                src={innovationMd}
-                loading="lazy"
-                alt="innovations"
-                width="100%"
-              />
-            </picture>
+            <GridSecondPicture/>
           </ImageCard>
         </>
       ) : (
