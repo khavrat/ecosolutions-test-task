@@ -24,18 +24,8 @@ export const SliderEl = () => {
 
   const settings = {
     appendArrows: ArrowsContainer,
-    nextArrow: (
-      <CustomNextArrow
-        type="button"
-        aria-label="to the next slide"
-      ></CustomNextArrow>
-    ),
-    prevArrow: (
-      <CustomPrevArrow
-        type="button"
-        aria-label="to the previous slide"
-      ></CustomPrevArrow>
-    ),
+    nextArrow: <CustomNextArrow></CustomNextArrow>,
+    prevArrow: <CustomPrevArrow></CustomPrevArrow>,
     mobileFirst: true,
     infinite: true,
     speed: 500,

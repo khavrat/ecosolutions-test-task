@@ -74,14 +74,12 @@ export const Title = styled.h3`
   }
 `;
 
-
 export const ArrowsContainer = styled.div`
   &.container {
     position: relative;
     width: 144px;
   }
 `;
-
 
 export const CustomPrevArrow = styled.button`
   display: inline-block;
