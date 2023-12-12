@@ -24,18 +24,6 @@ export const SliderEl = () => {
 
   const settings = {
     appendArrows: ArrowsContainer,
-    nextArrow: (
-      <CustomNextArrow
-        type="button"
-        aria-label="to the next slide"
-      ></CustomNextArrow>
-    ),
-    prevArrow: (
-      <CustomPrevArrow
-        type="button"
-        aria-label="to the previous slide"
-      ></CustomPrevArrow>
-    ),
     mobileFirst: true,
     infinite: true,
     speed: 500,
@@ -51,6 +39,18 @@ export const SliderEl = () => {
     afterChange: (current) => {
       setActiveSlide(current);
     },
+    nextArrow: (
+      <CustomNextArrow
+        type="button"
+        aria-label="to the next slide"
+      ></CustomNextArrow>
+    ),
+    prevArrow: (
+      <CustomPrevArrow
+        type="button"
+        aria-label="to the previous slide"
+      ></CustomPrevArrow>
+    ),
     responsive: [
       {
         breakpoint: 768,
@@ -70,7 +70,7 @@ export const SliderEl = () => {
           {`0${sliderData.length}`}
         </Counter>
       </CounterContainer>
-      <ArrowsContainer className="container"></ArrowsContainer>
+      {/* <ArrowsContainer className="container"></ArrowsContainer> */}
       <Slider {...settings}>
         {sliderData.map((item) => (
           <a key={item.id} href="# " aria-label="go into the detail">
@@ -97,6 +97,7 @@ export const SliderEl = () => {
           </a>
         ))}
       </Slider>
+      <ArrowsContainer className="container"></ArrowsContainer>
     </>
   );
 };
