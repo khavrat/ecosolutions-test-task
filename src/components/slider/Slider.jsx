@@ -70,7 +70,7 @@ export const SliderEl = () => {
           {`0${sliderData.length}`}
         </Counter>
       </CounterContainer>
-      {/* <ArrowsContainer className="container"></ArrowsContainer> */}
+      <ArrowsContainer className="container"></ArrowsContainer>
       <Slider {...settings}>
         {sliderData.map((item) => (
           <a key={item.id} href="# " aria-label="go into the detail">
@@ -97,7 +97,6 @@ export const SliderEl = () => {
           </a>
         ))}
       </Slider>
-      <ArrowsContainer className="container"></ArrowsContainer>
     </>
   );
 };

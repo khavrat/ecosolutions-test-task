@@ -78,6 +78,7 @@ export const ArrowsContainer = styled.div`
   &.container {
     position: relative;
     width: 144px;
+    background-color: red;
   }
 `;
 
@@ -105,12 +106,6 @@ export const CustomPrevArrow = styled.button`
     background-image: url(${arrowLight});
     background-repeat: no-repeat;
     background-position: center center;
-  }
-
-  @media screen and (min-width: 360px) {
-    top: -62px;
-    right: 80px;
-    left: auto;
   }
 
   @media screen and (min-width: 768px) {
