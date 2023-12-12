@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import arrow from "../../images/icons/arrowRight.png";
-import arrowLight from "../../images/icons/arrowLight.png";
+// import arrow from "../../images/icons/arrowRight.png";
+// import arrowLight from "../../images/icons/arrowLight.png";
 
 export const Card = styled.div`
   background-color: var(--card-color);
@@ -89,7 +89,7 @@ export const CustomPrevArrow = styled.button`
   border: none;
   border-radius: 50%;
   border: 1px solid var(--primary-color);
-  background-image: url(${arrow});
+  background-image: url(${"../../images/icons/arrowRight.png"});
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -102,7 +102,7 @@ export const CustomPrevArrow = styled.button`
   &:hover,
   :focus {
     border: 1px solid var(--accent-color);
-    background-image: url(${arrowLight});
+    background-image: url(${"../../images/icons/arrowLight.png"});
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -133,7 +133,7 @@ export const CustomNextArrow = styled.button`
   border: none;
   border-radius: 50%;
   border: 1px solid var(--primary-color);
-  background-image: url(${arrow});
+  background-image: url(${"../../images/icons/arrowRight.png"});
   background-repeat: no-repeat;
   background-position: center center;
   transform: rotate(180deg);
@@ -146,7 +146,7 @@ export const CustomNextArrow = styled.button`
   &:hover,
   :focus {
     border: 1px solid var(--accent-color);
-    background-image: url(${arrowLight});
+    background-image: url(${"../../images/icons/arrowLight.png"});
     background-repeat: no-repeat;
     background-position: center center;
   }
