@@ -1,5 +1,7 @@
 @import "normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Oswald:wght@400;700&display=swap");
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 :root {
   --bg-color: #f3f5fa;
