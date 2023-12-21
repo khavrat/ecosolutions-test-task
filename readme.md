@@ -2,10 +2,8 @@
 
 Реалізувати лендінг Ecosolution відповідно до технічного завдання. Технічне завдання містить опис секцій сторінки, та вимоги до них.
 
-Технології
-● React або Next.js
-Матеріали
-● [Макет Figma](https://www.figma.com/file/pTbhAbEXjsofeQHmtIE2tK/Ecosolution?type=design&node-id=0-1&mode=design&t=rHx8X9xwdImEVfez-0)
+- Технології: React або Next.js
+- Матеріали: [Макет Figma](https://www.figma.com/file/pTbhAbEXjsofeQHmtIE2tK/Ecosolution?type=design&node-id=0-1&mode=design&t=rHx8X9xwdImEVfez-0)
 
 ## Реалізація
 
